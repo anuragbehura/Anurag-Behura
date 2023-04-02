@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Anurag Behura</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Popup box starts -->
+
+    <!-- <div class="popup">
+        <button id="close">&times;</button>
+        <h1>Site Notice</h1>
+        <p>This Portfolio site is under development.
+            There might be some bugs or problems in this site.</p>
+    </div> -->
+
+    <!-- Popup box ends -->
+    
+<!-- header section starts  -->
+
+<header>
+
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#github">github</a>
+        <a href="#blogs">blogs</a>
+        <a href="#contact">contact</a>
+ 
+
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="images/1676656396442.jpg" alt="">
+        <h3> anurag <span>behura</span> </h3>
+        <p> i am a <span class="typing-text"> front end developer </span> </p>
+        <a href="#about" class="btn">about me</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- Popup box starts -->
+
+<div class="popup">
+    <button id="close">&times;</button>
+    <h1>Site Notice</h1>
+    <h2>This Portfolio site is under development.
+        There might be some bugs or problems in this site.</h2>
+</div>
+
+<!-- Popup box ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about <span>me</span> </h1>
+
+    <div class="row">
+
+        <div class="content">
+            <h3> my name is <span> Anurag Behura </span> </h3>
+            <p class="info"> I am just a learner and developer..</p>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> language : </span> hindi / english </p>
+                    <p> <span> experience : </span> 2 years </p>
+                    <p> <span> email : </span> behura960@gmail.com </p>
+                    <p> <span> country : </span> India </p>
+                </div>
+            </div>
+            <!--<a href="#" class="btn">download CV</a>-->
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- github repo section starts  -->
+
+<section class="github" id="github">
+
+    <h1 class="heading"> <span> my </span> github repo </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <img src="images/github1.jpg" alt="">
+            <h3>My GitHub Repositories</h3>
+            <div class="content">
+                <a href="https://github.com/anuragbehura?tab=repositories" class="btn">click here</a>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- github repo section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span> my </span> blogs </h1>
+
+    <div class="box-container">
+        
+        <div class="box tilt">
+            <img src="images/blog-img-1.jpg" alt="">
+            <h3> Top 10 programming languages that every techie should learn || 2021 </h3>
+            <a href="https://techbunny01.blogspot.com/2021/08/techbunny.html" class="btn">click here</a>
+        </div>
+
+        <div class="box tilt">
+            <img src="images/blog-img-2.jpg" alt="">
+            <h3> Artificial Intelligence - What is AI and How to learn it? || 2021 </h3>
+            <a href="https://techbunny01.blogspot.com/2021/08/artificial-intelligence.html" class="btn">click here</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" name="name" placeholder="your name">
+                <input type="email" name="emailaddress" placeholder="email">
+                <input type="text" name="subject" placeholder="subject">
+            </div>
+
+            <textarea placeholder="message" name="message" id="message" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="send message">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<div class="footer"> created by <span> Anurag Behura </span> | all rights reserved! </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+    let menu = document.querySelector('#menu-bars');
+    let header = document.querySelector('header');
+
+    menu.onclick = () => {
+        menu.classList.toggle('fa-times');
+        header.classList.toggle('active');
+    }
+
+    window.onscroll = () => {
+        menu.classList.remove('fa-times');
+        header.classList.remove('active');
+    };
+
+    var typed = new Typed('.typing-text', {
+        strings: ['front end developer', 'programmer', 'game developer', 'web developer'],
+        loop: true,
+        typeSpeed: 100
+    });
+
+    VanillaTilt.init(document.querySelectorAll('.tilt'), {
+        max: 25
+    });
+
+</script>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
