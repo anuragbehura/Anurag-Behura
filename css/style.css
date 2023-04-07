@@ -37,6 +37,55 @@ body{
     padding-right: 5rem;
 }
 
+/* Social-Links */
+
+.social-link{
+    padding-top: 10px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.social-link a{
+    flex: content;
+    justify-content: space-between;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-twitter:hover{
+    transform: rotate(20deg);
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-instagram:hover {
+    transform: rotate(20deg);
+}
+
+.fa-linkedin-in {
+    color: white;
+}
+
+.fa-linkedin-in:hover {
+    transform: rotate(20deg);
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-github:hover {
+    transform: rotate(20deg);
+}
+
+/* Social-Links */
+
 
 /* POPUP SECTION */
 
